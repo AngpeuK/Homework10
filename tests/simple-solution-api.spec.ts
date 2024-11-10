@@ -54,7 +54,7 @@ test('post order with correct data should receive code 201', async ({ request })
   expect.soft(responseBody.id).toBeDefined()
 })
 
-test( 'post order with incorrect data should receive code 400', async ({ request }) => {
+test('post order with incorrect data should receive code 400', async ({ request }) => {
   // prepare request body
   const requestBody = {
     status: 'OPENN',
