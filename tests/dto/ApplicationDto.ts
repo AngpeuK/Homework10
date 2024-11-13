@@ -62,26 +62,4 @@ export class ApplicationDto {
       3, // loan period
     )
   }
-
-  static createMediumRiskApplication(): ApplicationDto {
-    return new ApplicationDto(
-      1000, //income
-      0, //debt
-      17, //age
-      true, // employed
-      100, // random loan amount
-      6, // loan period
-    )
-  }
-
-  static createHighRiskApplication(): ApplicationDto {
-    return new ApplicationDto(
-      1000, //income
-      0, //debt
-      17, //age
-      true, // employed
-      3000, // random loan amount
-      6, // loan period
-    )
-  }
 }
