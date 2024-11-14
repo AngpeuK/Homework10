@@ -54,11 +54,33 @@ export class ApplicationDto {
 
   static createLowRiskApplication(): ApplicationDto {
     return new ApplicationDto(
-      1000, //income
-      0, //debt
-      17, //age
+      2887.020880680906, //income
+      0.20974858625585746, //debt
+      27, //age
       true, // employed
-      100, // random loan amount
+      559.6472703726, // random loan amount
+      12, // loan period
+    )
+  }
+
+  static createMediumRiskApplication(): ApplicationDto {
+    return new ApplicationDto(
+      2094.503037555368, //income
+      1.114294671266408, //debt
+      60, //age
+      true, // employed
+      532.5323224939282, // random loan amount
+      18, // loan period
+    )
+  }
+
+  static createHighRiskApplication(): ApplicationDto {
+    return new ApplicationDto(
+      2656.6985828542365, //income
+      0.3167980760003073, //debt
+      39, //age
+      true, // employed
+      536.3614322782705, // random loan amount
       3, // loan period
     )
   }
